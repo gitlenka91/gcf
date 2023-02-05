@@ -1,0 +1,107 @@
+.totals-section {
+    display: flex;
+    gap: 16px;
+    margin: 16px 0;
+}
+
+.totals-section div {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    width: 25%;
+    background-color: #fff;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 16px;
+    padding: 16px;
+    font-size: 18px;
+}
+
+.totals-section div span {
+    display: block;
+    margin: 10px;
+    font-size: 42px;
+    font-family: 'Abril Fatface', serif;
+}
+
+.section {
+    background: #fff;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 16px;
+    margin: 16px 0;
+    padding: 16px;
+}
+
+.section .subtitle {
+    margin-bottom: 16px;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: #000;
+}
+
+.section .areas {
+    display: flex;
+}
+
+.area {
+    margin: 16px 0;
+}
+
+.title {
+    font-size: 24px;
+    font-family: 'Abril Fatface', serif;
+}
+
+.area .type {
+    color: grey;
+}
+
+.funding-data {
+    display: flex;
+    gap: 16px
+}
+
+.list {
+    display: block;
+}
+
+.list div {
+    margin-bottom: 24px;
+}
+
+.list div:last-of-type {
+    margin-bottom: 0;
+}
+
+.list .title {
+    margin-bottom: 8px;
+}
+
+.link-icon a {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.link-icon a:hover {
+    border-bottom: 2px solid #000;
+}
+
+.link-icon a img {
+    width: auto;
+    height: 20px;
+}
+
+@media screen and (max-device-width: 480px) {
+    .section, .section .areas, .totals-section, .funding-data {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .totals-section div {
+        max-width: calc(100% - 32px);
+        width: calc(100% - 32px);
+    }
+}

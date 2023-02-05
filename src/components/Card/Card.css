@@ -1,0 +1,41 @@
+.card {
+    background: #fff;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 16px;
+    width: 260px;
+    overflow: hidden;
+    transition: transform 450ms ease;
+}
+
+h2 {
+    line-height: 32px;
+}
+
+.card:hover {
+    transform: scale(1.02);
+}
+
+.card .content {
+    padding: 20px;
+}
+
+h2 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+
+img {
+    width: 100%;
+}
+
+img.default {
+    display: flex;
+    width: 80px;
+    margin: 18px auto;
+}
+
+span.comma ~ span.comma:before {
+    content: ', ';
+}
